@@ -27,6 +27,7 @@ def guess_is_valid(candidate):
             return False
         if candidate in guesses:
             print("You can't use one word twice")
+
             return False
     return True
 
