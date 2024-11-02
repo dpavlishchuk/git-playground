@@ -19,6 +19,9 @@ def guess_is_valid(candidate):
         if count < candidate.count(letter):
             print(f"You can use letter {letter} only {count} times")
             return False
+        if candidate in guesses:
+            print("Already used: ")
+            return False
     return True
 
 
